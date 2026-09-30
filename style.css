@@ -1,0 +1,73 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f5f7;
+}
+
+.container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+}
+
+h1, h2 { text-align: center; }
+
+form {
+    display: grid;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    padding: 10px 14px;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 4px 2px;
+}
+
+#saveBtn { background: #222; color: white; }
+.secondary { background: #ddd; }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.hidden { display: none; }
+#message { text-align: center; min-height: 20px; }
+
+
+/* Mobile-friendly student table */
+@media (max-width: 600px) {
+    .container {
+        margin: 15px auto;
+        padding: 18px;
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 560px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+}
